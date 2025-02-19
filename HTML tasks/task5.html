@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: auto; /* Centers the table */
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="color:blue; text-align: center;">Registration Form</h2>
+
+<form>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <td><input type="text" name="firstname"></td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td><input type="text" name="lastname"></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <th>Re-enter Password</th>
+            <td><input type="password" name="repassword"></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>
+                <input type="radio" name="gender" value="male"> Male 
+                <input type="radio" name="gender" value="female"> Female
+            </td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td><input type="number" name="age"></td>
+        </tr>
+        <tr>
+            <th>Phone Number</th>
+            <td><input type="tel" name="phone"></td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td><textarea name="address"></textarea></td>
+        </tr>
+        <tr>
+            <th>State</th>
+            <td><input type="text" name="state"></td>
+        </tr>
+        <tr>
+            <th>Country</th>
+            <td>
+                <select name="country">
+                    <option>Choose your country</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Languages known</th>
+            <td>
+                <input type="checkbox" name="lang" value="english"> English
+                <input type="checkbox" name="lang" value="kannada"> Kannada
+                <input type="checkbox" name="lang" value="hindi"> Hindi
+                <input type="checkbox" name="lang" value="telugu"> Telugu
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" required> Hereby I declare all the given details are true
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit">Register</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

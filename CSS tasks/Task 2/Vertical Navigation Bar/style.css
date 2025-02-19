@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+.nav-container {
+    width: 200px;
+    border: 2px solid black;
+    padding: 0;
+    margin: auto;
+}
+
+.vertical-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.vertical-nav li {
+    padding: 12px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.vertical-nav li a {
+    text-decoration: none;
+    color: blue;
+    display: block;
+    padding: 12px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Default Home Section Styling */
+.vertical-nav .home {
+    background-color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Hover Effect for List Items */
+.vertical-nav li a:hover {
+    background-color: orange;
+    color: white;
+}

@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+.nav-container {
+    width: 60%;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.horizontal-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: lightgray;
+}
+
+.horizontal-nav li {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border-right: 2px solid white;
+}
+
+.horizontal-nav li:last-child {
+    border-right: none; /* Remove border from last item */
+}
+
+.horizontal-nav li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    display: block;
+    padding: 15px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Default Home Section Styling */
+.horizontal-nav .home {
+    background-color: gray;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Hover Effect for Navigation Items */
+.horizontal-nav li a:hover {
+    background-color: gray;
+    color: white;
+}
